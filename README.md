@@ -1,3 +1,7 @@
+Отличная идея! Добавил информацию о параметре `-f` в описание. Вот обновленная версия файла `README.md`:
+
+---
+
 # 🌐 GlobalGate VPN
 
 **GlobalGate VPN** - A powerful VPN management tool using sing-box core. **Hundreds of free VPN servers from multiple countries worldwide!**
@@ -8,6 +12,7 @@
 - **🌍 Global Access** - Servers in different countries to bypass geo-restrictions
 - **🔒 Complete Security** - Supports all modern protocols: Shadowsocks, VMess, VLESS, Trojan, Hysteria2
 - **🛡️ Dual Operation Modes** - Choose what works best for you
+- **📂 Custom Proxy Lists** - Use your own server list with a simple command-line argument
 
 ## 🎮 Operation Modes
 
@@ -30,6 +35,7 @@
 - **Smart Selection** - Servers sorted by latency, shows country and response time
 - **Instant Control** - Press `c` to switch servers, `q` to quit
 - **Geo Detection** - Automatic server country identification
+- **Custom File Support** - Run with your own proxy list using `-f` parameter
 
 ## 📦 Quick Start
 
@@ -43,7 +49,24 @@ go build -o globalgate.exe
 globalgate.exe
 ```
 
-## 🔧 Supported Formats
+### 🔧 Using Custom Proxy Files
+
+You can specify any proxy file when running GlobalGate VPN:
+
+```bash
+# Use default proxies.txt
+globalgate.exe
+
+# Use your custom proxy list
+globalgate.exe -f my_servers.txt
+
+# Use proxies from a different location
+globalgate.exe -f D:\vpn\premium_servers.txt
+```
+
+The program will test and use proxies from your specified file instead of the default `proxies.txt`.
+
+## 🔗 Supported Formats
 
 - `ss://` - Shadowsocks
 - `vmess://` - VMess
@@ -64,8 +87,8 @@ globalgate.exe
 
 ## 📁 Configuration Files
 
-- `proxies.txt` - Your custom proxy list (optional)
-- `working_proxies.txt` - List of working servers with latency
+- `proxies.txt` - Your default custom proxy list (optional)
+- `working_proxies.txt` - List of working servers with latency (auto-generated)
 - `db.mmdb` - GeoIP database for country detection (optional)
 - `sing-box.log` - VPN runtime logs
 
@@ -91,6 +114,7 @@ go build -o globalgate.exe
 - **Instant** - Quick connection with no waiting
 - **Simple** - Intuitive interface, all keyboard-controlled
 - **Reliable** - Powered by proven sing-box core
+- **Flexible** - Use any proxy list with the `-f` parameter
 
 ## 📜 License
 
