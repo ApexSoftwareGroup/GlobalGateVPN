@@ -1,7 +1,3 @@
-Отличная идея! Добавил информацию о параметре `-f` в описание. Вот обновленная версия файла `README.md`:
-
----
-
 # 🌐 GlobalGate VPN
 
 **GlobalGate VPN** - A powerful VPN management tool using sing-box core. **Hundreds of free VPN servers from multiple countries worldwide!**
