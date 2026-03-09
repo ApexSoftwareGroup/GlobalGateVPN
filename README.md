@@ -55,9 +55,6 @@ globalgate.exe
 
 # Use your custom proxy list
 globalgate.exe -f my_servers.txt
-
-# Use proxies from a different location
-globalgate.exe -f D:\vpn\premium_servers.txt
 ```
 
 The program will test and use proxies from your specified file instead of the default `proxies.txt`.
@@ -84,10 +81,9 @@ The program will test and use proxies from your specified file instead of the de
 
 ## 📁 Configuration Files
 
-- `proxies.txt` - Your default custom proxy list (optional)
-- `working_proxies.txt` - List of working servers with latency (auto-generated)
+- `proxies.txt` - Your custom proxy list (optional)
+- `working_proxies.txt` - List of checked VPN servers 
 - `db.mmdb` - GeoIP database for country detection (optional)
-
 
 ## ⚙️ System Requirements
 
