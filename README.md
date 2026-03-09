@@ -4,7 +4,7 @@
 
 ## ✨ Key Features
 
-- **🚀 Instant Connection** - Fast server availability testing (just 2 ping requests)
+- **🚀 Instant Connection** - Fast server availability testing 
 - **🌍 Global Access** - Servers in different countries to bypass geo-restrictions
 - **🔒 Complete Security** - Supports all modern protocols: Shadowsocks, VMess, VLESS, Trojan, Hysteria2
 - **🛡️ Dual Operation Modes** - Choose what works best for you
