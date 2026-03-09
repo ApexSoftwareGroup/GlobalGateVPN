@@ -69,7 +69,8 @@ The program will test and use proxies from your specified file instead of the de
 - `vless://` - VLESS
 - `trojan://` - Trojan
 - `hy2://` or `hysteria2://` - Hysteria2
-
+- `socks5://` - Socks5
+- 
 ## 🎮 How to Use
 
 1. **Quick Test** - All proxies are automatically tested for connectivity
@@ -86,7 +87,7 @@ The program will test and use proxies from your specified file instead of the de
 - `proxies.txt` - Your default custom proxy list (optional)
 - `working_proxies.txt` - List of working servers with latency (auto-generated)
 - `db.mmdb` - GeoIP database for country detection (optional)
-- `sing-box.log` - VPN runtime logs
+
 
 ## ⚙️ System Requirements
 
